@@ -6,18 +6,14 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="mishka-logo">
-        <a href="index.html">
-        <img src="img/mishka-logo.svg" alt="Мишка" width="86" height="35">
-        </a>
-      </div>
+      <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="Мишка" width="86" height="35">
+      </a>
       <button class="header__nav-button" type="button">
-      <img src="img/nav-button.svg" alt="navigation-button" width="20" height="14">
       </button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <!--Ни из лекции, ни из демо не понял, зачем здесь нужен второй класс. Надеюсь, впоследствии прояснится. -->
             <li class="site-list__item">
               <a href="catalog.html">
               Каталог товаров
@@ -47,74 +43,72 @@
         <h1 class="catalog-header__header">Каталог товаров</h1>
       </div>
       <div class="product">
-        <figure class="product__figure">
-          <img class="product__image" src="img/rabbit.jpg" alt="Зайчик-порыгайчик">
-          <figcaption class="product__description">
-            <h2 class="product__name">
-              Зайчик-попрыгайчик
-            </h2>
-            <p class="product__parameters">
-              Рост 30 см, вес 200 г
-            </p>
-          </figcaption>
-        </figure>
+        <img class="product__image" src="img/rabbit.jpg" alt="Зайчик-попрыгайчик">
+        <h2 class="product__name">
+          Зайчик-попрыгайчик
+        </h2>
+        <p class="product__parameters">
+          Рост 30 см, вес 200 г
+        </p>
         <div class="product__buy">
           <p class="product__price">
             1 200 руб.
           </p>
-          <button class="product__purchase-button" type="button">
-          <img src="img/cart.svg" alt="купить">
-          </button>
+          <a class="product__purchase-button purchase-block" href="#">
+          купить
+          </a>
         </div>
       </div>
       <div class="product">
-        <figure class="product__figure">
-          <img class="product__image" src="img/basket.jpg" alt="Корзина для белья">
-          <figcaption class="product__description">
-            <h2 class="product__name">
-              Корзинка для белья
-            </h2>
-            <p class="product__parameters">
-              Диаметр 15 см, высота 10 см
-            </p>
-          </figcaption>
-        </figure>
+        <img class="product__image" src="img/basket.jpg" alt="Корзина для белья">
+        <h2 class="product__name">
+          Корзинка для белья
+        </h2>
+        <p class="product__parameters">
+          Диаметр 15 см, высота 10 см
+        </p>
         <div class="product__buy">
           <p class="product__price">
             690 руб.
           </p>
-          <button class="product__purchase-button" type="button">
-          <img src="img/cart.svg" alt="купить">
-          </button>
+          <a class="product__purchase-button purchase-block" href="#">
+          купить
+          </a>
         </div>
       </div>
       <div class="product">
-        <figure class="product__figure">
-          <img class="product__image" src="img/basket-toys.jpg" alt="Большая корзинка для игрушек">
-          <figcaption class="product__description">
-            <h2 class="product__name">
-              Большая корзинка для игрушек
-            </h2>
-            <p class="product__parameters">
-              Диаметр 30 см, высота 30 см
-            </p>
-          </figcaption>
-        </figure>
+        <img class="product__image" src="img/basket-toys.jpg" alt="Большая корзинка для игрушек">
+        <h2 class="product__name">
+          Большая корзинка для игрушек
+        </h2>
+        <p class="product__parameters">
+          Диаметр 30 см, высота 30 см
+        </p>
         <div class="product__buy">
           <p class="product__price">
             1 500 руб.
           </p>
-          <button class="product__purchase-button" type="button">
-          <img src="img/cart.svg" alt="купить">
-          </button>
+          <a class="product__purchase-button purchase-block" href="#">
+          купить
+          </a>
         </div>
       </div>
+      <section class="production">
+        <h2 class="production__header">
+          Процесс производства
+        </h2>
+        <video class="production__video" src="#" width="260" height="150" controls preload="auto"></video>
+        <p class="production__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.
+        </p>
+        <a class="production__order-button" href="#">
+        сделать заказ
+        </a>
+      </section>
       <!-- здесь будет секция с процессом производства -->
     </main>
     <footer class="footer">
-      <div class="footer__logo visually-hidden">
-        <img class="mishka-logo" src="img/mishka-logo.svg" alt="Мишка" width="102" height="34">
-      </div>
+      <img class="footer__logo visually-hidden" src="img/logo.svg" alt="Мишка" width="102" height="34">
       <div class="social-media">
         <b class="social-media__label visually-hidden">Мы в социальных сетях</b>
         <ul class="social-media__list">
