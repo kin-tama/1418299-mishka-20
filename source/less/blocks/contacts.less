@@ -1,0 +1,38 @@
+.contacts {
+  outline: 1px solid black;
+}
+
+.contacts__header {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__address {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: @lighter-black;
+  width: 190px;
+}
+
+.contacts__contact {
+  .contacts__address;
+  width: 50px;
+}
+
+.contacts__email {
+  .contacts__address;
+  text-decoration: underline;
+}
+
+.contacts__map {
+  height: 457px;
+  width: 322px;
+  background-color: grey;
+  //серый фон - заглушка. уберу, когда вставлю карту
+}
+
+.contacts__write-to-us {
+  .button;
+}
