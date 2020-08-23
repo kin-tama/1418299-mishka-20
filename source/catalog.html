@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,128 +14,145 @@
         <button class="page-header__nav-button" type="button">
         </button>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__list-item site-list__item">
+      <nav>
+        <ul class="navigation site-list">
+          <li class="navigation__list-item">
             <a href="catalog.html">
-            Каталог товаров
+              Каталог товаров
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
+          <li class="navigation__list-item">
             <a href="form.html">
-            Вязание на заказ
+              Вязание на заказ
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
+          <li class="navigation__list-item">
             <a href="#">
-            Поиск по сайту
+              Поиск по сайту
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
+          <li class="navigation__list-item">
             <a href="#">
-            Корзина: пока пуста
+              Корзина: пока пуста
+            </a>
+          </li>
+          <li class="navigation__hidden--arrivals">
+            <a href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="navigation__hidden--sale">
+            <a href="#">
+              Распродажа
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-catalogue">
-      <div class="catalog-header section-header">
-        <h1>Каталог товаров</h1>
-      </div>
-      <div class="product product-section">
-        <img class="product__image product-section__image" src="img/rabbit.jpg" alt="Зайчик-попрыгайчик">
-        <div class="product__description product-section__description">
-          <h2 class="product__name">
-            Зайчик-попрыгайчик
-          </h2>
-          <p class="product__parameters">
-            Рост 30 см, вес 200 г
-          </p>
-          <div class="product__buy product-section__buy">
-            <p class="product__price">
-              1 200 руб.
-            </p>
-            <a class="product__purchase-button purchase-block" href="#">
-            купить
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="product product-section">
-        <img class="product__image product-section__image" src="img/basket.jpg" alt="Корзина для белья">
-        <div class="product__description product-section__description">
-          <h2 class="product__name">
-            Корзинка для белья
-          </h2>
-          <p class="product__parameters">
-            Диаметр 15 см, высота 10 см
-          </p>
-          <div class="product__buy product-section__buy">
-            <p class="product__price">
-              690 руб.
-            </p>
-            <a class="product__purchase-button purchase-block" href="#">
-            купить
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="product product-section">
-        <img class="product__image product-section__image" src="img/basket-toys.jpg" alt="Большая корзинка для игрушек">
-        <div class="product__description product-section__description">
-          <h2 class="product__name">
-            Большая корзинка для игрушек
-          </h2>
-          <p class="product__parameters">
-            Диаметр 30 см, высота 30 см
-          </p>
-          <div class="product__buy product-section__buy">
-            <p class="product__price">
-              1 500 руб.
-            </p>
-            <a class="product__purchase-button purchase-block" href="#">
-            купить
-            </a>
-          </div>
-        </div>
-      </div>
+    <main>
+    <h1 class="visually-hidden">Ниши товары</h2>
+      <section>
+        <h2 class="catalog-header">Каталог товаров</h2>
+        <ul class="products-list">
+          <li class="product product-section">
+            <img class="product__image" src="img/rabbit.jpg" alt="Зайчик-попрыгайчик">
+            <div class="product__description">
+              <h3 class="product__name">
+                Зайчик-попрыгайчик
+              </h3>
+              <p class="product__parameters">
+                Рост 30 см, вес 200 г
+              </p>
+              <div class="product__buy product-section__buy">
+                <p class="product__price">
+                  1 200 руб.
+                </p>
+                <a class="product__purchase-button" href="#">
+                купить
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="product product-section">
+            <img class="product__image" src="img/basket.jpg" alt="Корзина для белья">
+            <div class="product__description">
+              <h3 class="product__name">
+                Корзинка для белья
+              </h3>
+              <p class="product__parameters">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <div class="product__buy product-section__buy">
+                <p class="product__price">
+                  690 руб.
+                </p>
+                <a class="product__purchase-button" href="#">
+                купить
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="product product-section">
+            <img class="product__image" src="img/basket-toys.jpg" alt="Большая корзинка для игрушек">
+            <div class="product__description">
+              <h3 class="product__name">
+                Большая корзинка для игрушек
+              </h3>
+              <p class="product__parameters">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <div class="product__buy product-section__buy">
+                <p class="product__price">
+                  1 500 руб.
+                </p>
+                <a class="product__purchase-button" href="#">
+                купить
+                </a>
+              </div>
+            </div>
+          </li>
+      </ul>
+      </section>
       <section class="production production-section">
-        <h2 class="production__header production-section__header">
+        <h2 class="production__header">
           Процесс производства
         </h2>
-        <video class="production__video" src="#" width="260" height="150" controls preload="auto"></video>
-        <p class="production__descr production-section__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары.
-        </p>
-        <a class="production__order-button production-section__order-button" href="#">
-        сделать заказ
-        </a>
+        <video class="production__video" src="#" controls preload="auto"></video>
+        <div class="production__wrapper">
+          <p class="production__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+            как появляются наши товары.
+          </p>
+          <a class="production__order-button" href="#">
+            сделать заказ
+          </a>
+        </div>
       </section>
       <!-- здесь будет секция с процессом производства -->
     </main>
-    <footer class="footer footer-position">
-      <img class="mishka-logo visually-hidden" src="img/logo.svg" alt="Мишка" width="102" height="34">
-      <div class="social-media">
-        <b class="social-media__label visually-hidden">Мы в социальных сетях</b>
-        <ul class="social-media__list social-section__list">
-          <li class="social-media__item">
-            <a href="https://www.instagram.com/?hl=ru" aria-label="instagram">
-            <img src="img/insta-icon.svg" alt="инстаграм" width="23" height="20">
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a href="https://ru-ru.facebook.com/" aria-label="facebook">
-            <img src="img/facebook-icon.svg" alt="фейсбук" width="23" height="20">
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a href="https://twitter.com/" aria-label="twitter">
-            <img src="img/twitter-icon.svg" alt="твитер" width="23" height="20">
-            </a>
-          </li>
-        </ul>
-        <p class="social-media__produced social-section__produced">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="logo--footer" src="img/logo.svg" alt="Мишка" width="102" height="34">
+        <div class="social-media">
+          <b class="social-media__label visually-hidden">Мы в социальных сетях</b>
+          <ul class="social-media__list social-section__list">
+            <li class="social-media__item">
+              <a href="https://www.instagram.com/?hl=ru" aria-label="instagram">
+                <img src="img/insta-icon.svg" alt="инстаграм" width="23" height="20">
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="https://ru-ru.facebook.com/" aria-label="facebook">
+                <img src="img/facebook-icon.svg" alt="фейсбук" width="23" height="20">
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="https://twitter.com/" aria-label="twitter">
+                <img src="img/twitter-icon.svg" alt="твитер" width="23" height="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
           Разработано
         </p>
       </div>

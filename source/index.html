@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <img class="logo" src="img/mishka-logo.svg" alt="Мишка" width="86" height="35">
+        <img class="logo" src="img/mishka-logo.svg" alt="Мишка лого" width="86" height="35">
         <button class="page-header__nav-button" type="button">
         </button>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__list-item site-list__item">
+      <nav>
+        <ul class="navigation site-list">
+          <li class="navigation__list-item">
             <a href="catalog.html">
-            Каталог товаров
+              Каталог товаров
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
+          <li class="navigation__list-item">
             <a href="form.html">
-            Вязание на заказ
+              Вязание на заказ
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
+          <li class="navigation__list-item">
             <a href="#">
-            Поиск по сайту
+              Поиск по сайту
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
+          <li class="navigation__list-item">
             <a href="#">
-            Корзина: пока пуста
+              Корзина: пока пуста
+            </a>
+          </li>
+          <li class="navigation__hidden--arrivals">
+            <a href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="navigation__hidden--sale">
+            <a href="#">
+              Распродажа
             </a>
           </li>
         </ul>
@@ -39,29 +49,32 @@
     </header>
     <main class="main">
       <section class="description description-section">
-        <div class="description__header description-section__header">
-          <h1>Милые штуки ручной работы для дома</h1>
+        <div class="description__header">
+          <p>Бесплатная доставка по России</p>
+          <h1>Милые штуки ручной работы&nbspдля&nbspдома</h1>
         </div>
-        <ul class="description__features-list description-section__features-list">
-          <li class="description__feature1 description-section__feature">
-            Предметы <br> интерьера
+        <ul class="description__features-list">
+          <li class="description__feature--items">
+            <span> Предметы интерьера </span>
           </li>
-          <li class="description__feature2 description-section__feature">
-            Детские <br> игрушки
+          <li class="description__feature--toys">
+            <span> Детские игрушки </span>
           </li>
         </ul>
       </section>
       <section class="product-of-the-week product-o-w-section">
-        <h2 class="product-of-the-week__name product-o-w-section__name">
-          Вязаные корзинки
-        </h2>
-        <h2 class="product-of-the-week__type product-o-w-section__type">
-          Товар недели
-        </h2>
-        <p class="product-of-the-week__descr product-o-w-section_descr">
+        <div class="product-of-the-week__wrapper">
+          <h2 class="product-of-the-week__name">
+            Вязаные корзинки
+          </h2>
+          <h2 class="product-of-the-week__type">
+            Товар недели
+          </h2>
+        </div>
+        <p class="product-of-the-week__descr">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <table class="product-of-the-week__parameters product-o-w-section__parameters">
+        <table class="product-of-the-week__parameters">
           <tr>
             <td>Цвет:</td>
             <td>"Тиффани"/серый</td>
@@ -75,36 +88,36 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img class="product-of-the-week__image product-o-w-section__image" src="img/image.jpg" alt="Вязаные корзиночки" width="260" height="315">
-        <p class="product-of-the-week__price product-o-w-section__price">
+        <img class="product-of-the-week__image" src="img/image.jpg" alt="Вязаные корзиночки">
+        <p class="product-of-the-week__price">
           Цена: 990 руб.
         </p>
-        <a href="#" class="product-of-the-week__purchase product-o-w-section__purchase">заказать</a>
+        <a href="#" class="product-of-the-week__purchase">заказать</a>
       </section>
       <section class="about-us about-section">
         <h2 class="about-us__header">Коротко о нас</h2>
-        <ul class="about-us__list about-section__list">
-          <li class="about-us__item about-us__item--eco">
-            Экологически чистые материалы
+        <ul class="about-us__list">
+          <li class="about-us__item">
+            Экологически чистые&nbspматериалы
           </li>
-          <li class="about-us__item about-us__item--scandi">
-            Скандинавский стиль по российской цене
+          <li class="about-us__item">
+            Скандинавский&nbspстиль по российской цене
           </li>
-          <li class="about-us__item about-us__item--like">
-            Увеличивает лайки на фотографиях
+          <li class="about-us__item">
+            Увеличивает&nbspлайки на фотографиях
           </li>
-          <li class="about-us__item about-us__item--handmade">
-            Связано вручную с любовью и умилением
+          <li class="about-us__item">
+            Связано&nbspвручную&nbspс любовью и умилением
           </li>
-          <li class="about-us__item about-us__item--domestic">
-            Поддержка отечественного производителя
+          <li class="about-us__item">
+            Поддержка&nbspотечественного производителя
           </li>
-          <li class="about-us__item about-us__item--present">
-            Поставляется в подарочной упаковке
+          <li class="about-us__item">
+            Поставляется&nbspв подарочной упаковке
           </li>
         </ul>
       </section>
-      <section class="reviews reviews-section">
+      <section class="reviews reviews-position">
         <h2 class="reviews__header">
           Отзывы
         </h2>
@@ -113,13 +126,13 @@
           и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
           больше лайков!
         </p>
-        <p class="reviews__author-name">
+        <b class="reviews__author-name">
           Анастасия Красильникова
-        </p>
+        </b>
         <a class="reviews__author-link" href="https://www.instagram.com/misssssiskras/">
-        @misssssiskras
+          @misssssiskras
         </a>
-        <div class="reviews-section__links">
+        <div class="reviews__links">
           <!-- ниже ссылка-заглушка. или это надо всё же сделать кнопкой? -->
           <a class="reviews__previous-link" href="#">
           "назад"
@@ -129,71 +142,77 @@
           "вперед"
           </a>
         </div>
-        <a href="#" class="reviews__live-a-comment reviews-section__live">написать</a>
+        <a href="#" class="reviews__live-a-comment">написать</a>
       </section>
       <section class="contacts contacts-section">
-        <h2 class="contacts__header contacts-section__header">Контакты</h2>
-        <div class="contacts-section__wrapper">
-          <p class="contacts__contact contacts-section__contact">
-            e-mail:
-          </p>
-          <a class="contacts__email contacts-section__email" href="mailto:info@mimimishkashop.ru">
-          info@mimimishkashop.ru
-          </a>
-          <p class="contacts__contact contacts-section__contact">
-            адрес:
-          </p>
-          <p class="contacts__address contacts-section__address">
-            г. Санкт-Петербург, <br>  ул. Большая Конюшенная, д. 19/8, офис 101
-          </p>
+        <div class="contacts__wrapper-one">
+          <h2 class="contacts__header">Контакты</h2>
+          <div class="contacts__wrapper-two">
+            <p class="contacts__contact">
+              e-mail:
+            </p>
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
+              info@mimimishkashop.ru
+            </a>
+            <p class="contacts__contact">
+              адрес:
+            </p>
+            <address class="contacts__address">
+              г.&nbspСанкт-Петербург, ул.&nbspБольшая Конюшенная, д.&nbsp19/8, офис&nbsp101
+            </address>
+          </div>
         </div>
         <!-- предварительный блок "Карта" -->
-        <div class="contacts__map contacts-section__map">
+        <div class="contacts__map">
           <!-- Здесь будет карта. Думал вставить через iframe, но передумал по аналогии с картинками (ты просил не вставлять). Стоило добавить? -->
         </div>
         <a href="#" class="contacts__write-to-us">напишите нам</a>
       </section>
     </main>
-    <footer class="footer footer-position">
-      <img class="mishka-logo visually-hidden" src="img/logo.svg" alt="Мишка" width="102" height="34">
-      <div class="social-media">
-        <b class="social-media__label visually-hidden">Мы в социальных сетях</b>
-        <ul class="social-media__list social-section__list">
-          <li class="social-media__item">
-            <a href="https://www.instagram.com/?hl=ru" aria-label="instagram">
-            <img src="img/insta-icon.svg" alt="инстаграм" width="23" height="20">
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a href="https://ru-ru.facebook.com/" aria-label="facebook">
-            <img src="img/facebook-icon.svg" alt="фейсбук" width="23" height="20">
-            </a>
-          </li>
-          <li class="social-media__item">
-            <a href="https://twitter.com/" aria-label="twitter">
-            <img src="img/twitter-icon.svg" alt="твитер" width="23" height="20">
-            </a>
-          </li>
-        </ul>
-        <p class="social-media__produced social-section__produced">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="logo--footer" src="img/logo.svg" alt="Мишка" width="102" height="34">
+        <div class="social-media">
+          <b class="social-media__label visually-hidden">Мы в социальных сетях</b>
+          <ul class="social-media__list social-section__list">
+            <li class="social-media__item">
+              <a href="https://www.instagram.com/?hl=ru" aria-label="instagram">
+                <img src="img/insta-icon.svg" alt="инстаграм" width="23" height="20">
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="https://ru-ru.facebook.com/" aria-label="facebook">
+                <img src="img/facebook-icon.svg" alt="фейсбук" width="23" height="20">
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="https://twitter.com/" aria-label="twitter">
+                <img src="img/twitter-icon.svg" alt="твитер" width="23" height="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">
           Разработано
         </p>
       </div>
     </footer>
-    <!-- разметка всплывающего окна -->
-    <div class="pop-up pop-up-section">
-      <h2 class="pop-up__header pop-up-section__header">
-        Добавить <br> в корзину
+      <!-- разметка всплывающего окна -->
+      <div class="pop-up pop-up-position">
+        <h2 class="pop-up__header">
+        Добавить в&nbspкорзину
       </h2>
-      <p class="pop-up__text pop-up-section__text"> Выберите размер</p>
+      <p class="pop-up__text">
+        Выберите размер
+      </p>
       <form class="pop-up__form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="pop-up__size-radio pop-up-section__size-radio" type="radio" name="size" id="s" checked>
+        <input class="pop-up__size-radio" type="radio" name="size" value="s" id="s" checked>
         <label class="pop-up__size-label visually-hidden" for="s"> s </label>
-        <input class="pop-up__size-radio pop-up-section__size-radio" type="radio" name="size" id="m">
+        <input class="pop-up__size-radio" type="radio" name="size" value="m" id="m">
         <label class="pop-up__size-label visually-hidden" for="m"> m </label>
-        <input class="pop-up__size-radio pop-up-section__size-radio" type="radio" name="size" id="l">
+        <input class="pop-up__size-radio" type="radio" name="size" value="l" id="l">
         <label class="pop-up__size-label visually-hidden" for="l"> l </label>
-        <button class="pop-up__submit pop-up-section__submit" type="submit">добавить</button>
+        <button class="pop-up__submit" type="submit">добавить</button>
       </form>
     </div>
   </body>
