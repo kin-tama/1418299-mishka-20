@@ -15,7 +15,7 @@
         </button>
       </div>
       <nav>
-        <ul class="navigation site-list">
+        <ul class="navigation page-header__nav">
           <li class="navigation__list-item">
             <a href="catalog.html">
               Каталог товаров
@@ -49,12 +49,12 @@
         </ul>
       </nav>
     </header>
-    <main>
-    <h1 class="visually-hidden">Ниши товары</h2>
-      <section>
-        <h2 class="catalog-header">Каталог товаров</h2>
-        <ul class="products-list">
-          <li class="product product-section">
+    <main class="main-catalog">
+      <h1 class="visually-hidden">Наши товары</h2>
+      <section class="catalog">
+        <h2 class="catalog__header">Каталог товаров</h2>
+        <ul class="products-list catalog__list">
+          <li class="product products-list__element">
             <img class="product__image" src="img/rabbit.jpg" alt="Зайчик-попрыгайчик">
             <div class="product__description">
               <h3 class="product__name">
@@ -63,7 +63,7 @@
               <p class="product__parameters">
                 Рост 30 см, вес 200 г
               </p>
-              <div class="product__buy product-section__buy">
+              <div class="product__buy">
                 <p class="product__price">
                   1 200 руб.
                 </p>
@@ -73,7 +73,7 @@
               </div>
             </div>
           </li>
-          <li class="product product-section">
+          <li class="product products-list__element">
             <img class="product__image" src="img/basket.jpg" alt="Корзина для белья">
             <div class="product__description">
               <h3 class="product__name">
@@ -92,7 +92,7 @@
               </div>
             </div>
           </li>
-          <li class="product product-section">
+          <li class="product products-list__element">
             <img class="product__image" src="img/basket-toys.jpg" alt="Большая корзинка для игрушек">
             <div class="product__description">
               <h3 class="product__name">
@@ -111,9 +111,9 @@
               </div>
             </div>
           </li>
-      </ul>
+        </ul>
       </section>
-      <section class="production production-section">
+      <section class="production catalog__production">
         <h2 class="production__header">
           Процесс производства
         </h2>
