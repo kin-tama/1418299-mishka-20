@@ -4,11 +4,13 @@
   padding-left: 30px;
   font-weight: 700;
   width: 320px;
+  position: relative;
 
   @media (min-width: @tablet) {
     padding-left: 0;
     position: relative;
     width: 664px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop) {
@@ -16,7 +18,35 @@
     position: relative;
     width: 1050px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 320px;
+    height: 10px;
+    background-image: url("../img/zigzag-line-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      background-image: url("../img/zigzag-line-tablet.svg");
+      width: 770px;
+      height: 20px;
+      bottom: -40px;
+      left: -50px;
+    }
+
+    @media (min-width: @desktop) {
+      background-image: url("../img/zigzag-line-desktop.svg");
+      width: 1150px;
+      height: 30px;
+      bottom: -50px;
+      left: 0;
+    }
+  }
 }
+
 
 .product-of-the-week__name {
   font-size: 25px;

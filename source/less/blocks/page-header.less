@@ -1,9 +1,15 @@
 .page-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header__nav {
   display: flex;
   flex-direction: column;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   position: relative;
 
   @media (min-width: @tablet) {
@@ -20,42 +26,4 @@
     justify-content: space-between;
     padding-left: 0;
   }
-}
-
-.page-header__wrapper {
-  min-height: 79px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: @desktop) {
-    position: absolute;
-    right: 450px;
-  }
-}
-
-.page-header__logo {
-  margin-left: 116px;
-}
-
-.page-header__nav-button {
-  width: 20px;
-  height: 20px;
-  min-height: 14px;
-  margin-left: auto;
-  margin-right: 31px;
-  border: none;
-  background-color: blue;
-
-  @media (min-width: @tablet) {
-    .visually-hidden;
-  }
-
-  @media (min-width: @desktop) {
-    .visually-hidden;
-  }
-}
-
-.page-header__nav {
-  margin: 0;
 }

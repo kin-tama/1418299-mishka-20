@@ -81,19 +81,40 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid @border-grey;
 
   @media (min-width: @tablet) {
     margin-top: auto;
+    width: 268px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 256px;
   }
 }
 
 .product__price {
   font-size: 15px;
   line-height: 24px;
+  font-weight: 700;
 
   @media (min-width: @tablet) {
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
+  }
+}
+
+.product__purchase-button {
+  fill: @one-more-black;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: @light-green;
+  }
+
+  &:active {
+    opacity: 0.2;
   }
 }

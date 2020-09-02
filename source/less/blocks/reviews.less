@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   padding-left: 30px;
+  margin-bottom: 50px;
   font-weight: 700;
   width: 320px;
+  position: relative;
 
   @media (min-width: @tablet) {
-    padding-left: 50px;
     position: relative;
     min-height: 540px;
     background-image: url("../img/review@1x.jpg");
@@ -16,13 +17,38 @@
     width: 768px;
   }
 
-  @media (min-width: @tablet) {
+  @media (min-width: @desktop) {
     width: 1052px;
     padding-left: 180px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 320px;
+    height: 10px;
+    background-image: url("../img/zigzag-line-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      background-image: url("../img/zigzag-line-tablet.svg");
+      width: 770px;
+      height: 20px;
+    }
+
+    @media (min-width: @desktop) {
+      background-image: url("../img/zigzag-line-desktop.svg");
+      width: 1150px;
+      height: 30px;
+    }
   }
 }
 
 .reviews__header {
+  position: relative;
+
   @media (min-width: @tablet) {
     font-size: 43px;
     line-height: 50px;
@@ -99,12 +125,36 @@
 .reviews__previous-link {
   border: 1px solid @border-grey;
   width: 130px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='26.003px' viewBox='0 0 50 26.003' enable-background='new 0 0 50 26.003' xml:space='preserve'%3E%3Cpolygon points='50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 '/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__next-link {
   border: 1px solid @border-grey;
   border-left: none;
   width: 130px;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='50px' height='26.003px' viewBox='0 0 50 26.003' enable-background='new 0 0 50 26.003' xml:space='preserve'%3E%3Cpolygon points='0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 '/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__live-a-comment {

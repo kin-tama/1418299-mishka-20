@@ -52,15 +52,35 @@
   }
 }
 
-.pop-up__size-radio {
-  width: 70px;
+.pop-up__size-label {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 35px;
+  width: 82px;
   height: 52px;
-  border: 2px solid black;
+  border: 2px solid @border-grey;
+
+  &:hover {
+    border: 2px solid @lighter-black;
+  }
+}
+
+.pop-up__size-radio {
+  position: absolute;
+  appearance: none;
+}
+
+.pop-up__size-radio:checked + .pop-up__size-label {
+  border: 2px solid @middle-green;
 }
 
 .pop-up__submit {
   .button;
   color: white;
+  font-weight: 700;
   background-color: @light-green;
   border: none;
   padding-top: 0;

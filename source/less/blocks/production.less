@@ -18,15 +18,30 @@
 }
 
 .production__header {
+  position: relative;
   margin-left: 91px;
   font-size: 17px;
   line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -60px;
+    width: 32px;
+    height: 30px;
+    background-image: url("/img/icon-video.svg");
+  }
 
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 24px;
     margin-top: 40px;
     margin-bottom: 0;
+
+    &::before {
+      top: -5px;
+    }
   }
 
   @media (min-width: @desktop) {
@@ -35,6 +50,11 @@
     margin-top: 90px;
     position: absolute;
     right: 130px;
+
+    &::before {
+      top: -50px;
+      left: 0;
+    }
   }
 }
 
