@@ -1,19 +1,21 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 85px;
   padding-right: 0;
   font-weight: 700;
   width: 320px;
 
   @media (min-width: @tablet) {
     width: 768px;
+    padding-top: 83px;
   }
 
   @media (min-width: @desktop) {
-    width: 1050px;
-    margin-right: 113px;
-    padding-left: 150px;
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 93px;
     flex-direction: row;
     position: relative;
   }
@@ -23,7 +25,8 @@
   font-size: 18px;
   line-height: 30px;
   margin-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-top: 5px;
   position: relative;
 
   @media (min-width: @tablet) {
@@ -35,15 +38,16 @@
   @media (min-width: @desktop) {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 0;
+    margin-left: 175px;
     margin-top: 80px;
+    margin-bottom: 0;
   }
 
   &::after {
     content: "";
     position: absolute;
     top: -20px;
-    right: -180px;
+    right: -190px;
     width: 50px;
     height: 80px;
     background-image: url("../img/icon-flag.svg");
@@ -54,8 +58,8 @@
     }
 
     @media (min-width: @desktop) {
-      top: -30px;
-      left: -100px;
+      top: -17px;
+      left: -110px;
     }
   }
 }
@@ -66,7 +70,9 @@
   width: 527px;
 
   @media (min-width: @desktop) {
-    padding-left: 90px;
+    min-width: 300px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -78,11 +84,13 @@
   @media (min-width: @tablet) {
     width: 680px;
     margin-left: 50px;
+    margin-top: 24px;
   }
 
   @media (min-width: @desktop) {
-    width: 350px;
-    margin-left: 0;
+    width: 315px;
+    margin-left: 175px;
+    margin-top: 35px;
   }
 }
 
@@ -107,6 +115,9 @@
   @media (min-width: @desktop) {
     font-size: 17px;
     line-height: 30px;
+    width: 225px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -119,6 +130,18 @@
   @media (min-width: @tablet) {
     width: 81px;
   }
+
+  &--address {
+    margin-left: 30px;
+
+    @media (min-width: @desktop) {
+      margin-left: 20px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-left: 0;
+    }
+  }
 }
 
 .contacts__email {
@@ -128,6 +151,10 @@
 
   @media (min-width: @tablet) {
     width: 230px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 30px;
   }
 }
 
@@ -139,15 +166,24 @@
   margin-bottom: 39px;
   //серый фон - заглушка. уберу, когда вставлю карту
 
+  @media (min-width: @tablet) {
+    margin-top: 18px;
+    margin-bottom: 52px;
+  }
+
   @media (min-width: @desktop) {
     width: 527px;
+    margin: 0;
   }
 }
 
 .contacts__write-to-us {
-  .button;
+  width: 260px;
+  margin-left: 30px;
+  padding-top: 15px;
 
   @media (min-width: @tablet) {
+    padding-top: 15px;
     width: 230px;
     margin-right: auto;
     margin-left: auto;
@@ -156,7 +192,7 @@
   @media (min-width: @desktop) {
     width: 230px;
     position: absolute;
-    top: 440px;
-    margin-left: 90px;
+    top: 500px;
+    margin-left: 180px;
   }
 }
