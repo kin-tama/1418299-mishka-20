@@ -14,6 +14,8 @@
   }
 }
 
+// Милые штуки ручной работы для дома
+
 .description__header {
   min-height: 283px;
   text-align: center;
@@ -22,33 +24,33 @@
   background-position-x: center;
   background-position-y: -17px;
 
-  @media (max-width: @mobile) and (min-resolution: 2dppx) {
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 575px auto;
   }
 
   @media (min-width: @tablet) {
     min-height: 626px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px auto;
+    background-position-y: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
-  @media (min-width: @tablet) and (min-resolution: 2dppx) {
-    min-height: 626px;
-    background-image: url("../img/hero-tablet@2x.jpg");
-    background-size: 1150px auto;
-  }
 
   @media (min-width: @desktop) {
     min-height: 626px;
     background-image: url("../img/hero-desktop@1x.jpg");
-  }
 
-  @media (min-width: @desktop) and (min-resolution: 2dppx) {
-    min-height: 626px;
-    background-image: url("../img/hero-desktop@2x.jpg");
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }
+
+// милые штуки ручной работы
 
 .description__header h1 {
   display: block;
@@ -64,20 +66,25 @@
     font-size: 43px;
     line-height: 50px;
     width: 660px;
-    margin-top: 154px;
+    margin-top: 110px;
+    margin-left: 48px;
   }
 
   @media (min-width: @desktop) {
     font-size: 53px;
     line-height: 57px;
     width: 700px;
-    margin-top: 158px;
+    margin-top: 115px;
+    margin-left: auto;
   }
 }
+
+// бесплатная доставка по России
 
 .description__header p {
   text-align: end;
   margin-right: 50px;
+  margin-top: 20px;
   font-size: 15px;
   line-height: 24px;
   color: @lighter-black;
@@ -87,6 +94,7 @@
   }
 }
 
+// кнопки
 
 .description__features-list {
   padding: 0;
@@ -110,7 +118,7 @@
       left: -50px;
       width: 770px;
       height: 20px;
-      background-image: url("/img/zigzag-fill-tablet.svg");
+      background-image: url("../img/zigzag-fill-tablet.svg");
     }
   }
 
@@ -118,6 +126,8 @@
     max-width: 1050px;
     font-size: 20px;
     line-height: 30px;
+    margin-left: 50px;
+    margin-top: 1px;
 
     &::after {
       content: "";
@@ -126,10 +136,12 @@
       left: -50px;
       width: 1150px;
       height: 20px;
-      background-image: url("/img/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
     }
   }
 }
+
+// описание кнопок "предметы интерьера" и "детские игрушки"
 
 .description__feature {
   display: flex;
@@ -143,67 +155,187 @@
   width: 320px;
   color: white;
 
-  & svg {
-    fill: @one-more-green;
-    opacity: 0.5;
-  }
-
-  &:hover {
-    min-height: 108px;
-
-    & svg {
-      opacity: 0.7;
-    }
-  }
-
-  &:active {
-    & svg {
-      opacity: 0.3;
-    }
-  }
-
   @media (min-width: @tablet) {
     width: 334px;
     min-height: 119px;
     padding-right: 36px;
-
-    &:hover {
-      min-height: 124px;
-    }
+    padding-left: 35px;
+    padding-top: 25px;
   }
 
   @media (min-width: @desktop) {
     width: 525px;
   }
-}
 
-.description__feature--items {
-  .description__feature;
-  background-color: @light-green;
-  padding-right: 36px;
+  // кнопка предметы интерьера
+
+  &--items {
+    background-color: @light-green;
+    padding-right: 36px;
+
+    &:hover {
+      background-color: @items-hover-green;
+
+      // это псевдоэлемент, увеличивающий кнопку при наведении
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-color: inherit;
+        right: 0;
+        top: -4px;
+
+        @media (min-width: @tablet) {
+          width: 50%;
+          left: 0;
+        }
+      }
+
+      & span {
+        position: relative;
+        top: -5px;
+      }
+    }
+
+    & span {
+      display: block;
+      width: 130px;
+    }
 
 
-  &:hover {
-    background-color: @items-hover-green;
+    // иконка "Лампа"
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icon-interior.svg");
+      margin-left: 214px;
+      opacity: 0.5;
+
+      @media (min-width: @tablet) {
+        margin-left: 221px;
+        margin-top: 5px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-left: 411px;
+      }
+    }
+
+    // состояния иконки "Лампа"
+
+    &:hover&::after {
+      opacity: 0.7;
+      top: 20px;
+
+      @media (min-width: @tablet) {
+        margin-left: 221px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-left: 411px;
+      }
+    }
+
+    &:active&::after {
+      opacity: 0.3;
+
+      @media (min-width: @tablet) {
+        margin-left: 221px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-left: 411px;
+      }
+    }
   }
 
-  & span {
-    display: inline-block;
-    width: 130px;
-  }
-}
+  // кнопка игрушки
 
-.description__feature--toys {
-  .description__feature;
-  background-color: @darker-green;
-  padding-right: 27px;
+  &--toys {
+    background-color: @darker-green;
+    padding-right: 27px;
 
-  &:hover {
-    background-color: @toy-hover-green;
-  }
+    &:hover {
+      background-color: @toy-hover-green;
 
-  & span {
-    display: inline-block;
-    width: 130px;
+      & span {
+        position: relative;
+        top: -5px;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-color: inherit;
+        right: 0;
+        top: 98px;
+
+        @media (min-width: @tablet) {
+          width: 50%;
+          top: -4px;
+          right: 0;
+        }
+      }
+    }
+
+    & span {
+      display: inline-block;
+      width: 130px;
+    }
+
+    //иконка "Кубик"
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icon-toy.svg");
+      margin-left: 203px;
+      opacity: 0.5;
+
+      @media (min-width: @tablet) {
+        margin-left: 205px;
+        margin-top: 7px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-left: 394px;
+      }
+    }
+
+    // состояния иконки "Кубик"
+
+    &:hover&::after {
+      opacity: 0.7;
+      top: 120px;
+
+      @media (min-width: @tablet) {
+        top: 20px;
+        margin-left: 210px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-left: 394px;
+      }
+    }
+
+    &:active&::after {
+      opacity: 0.3;
+
+      @media (min-width: @tablet) {
+        margin-left: 210px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-left: 394px;
+      }
+    }
   }
 }
