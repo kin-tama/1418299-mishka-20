@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <!-- ниже следует спрайт -->
@@ -64,7 +64,7 @@
               <img src="img/logo-mobile.svg" alt="Мишка лого">
             </picture>
           </a>
-          <button class="main-nav__nav-button" type="button">
+          <button class="main-nav__nav-button invisibility" type="button">
           </button>
         </div>
         <ul class="navigation main-nav__nav">
@@ -106,6 +106,7 @@
           </li>
         </ul>
       </nav>
+      <p class="page-header__delivery">Бесплатная доставка по России</p>
     </header>
       <main class="catalog">
       <h1 class="visually-hidden">Наши товары</h1>
@@ -113,18 +114,22 @@
         <h2 class="catalog__header">Каталог товаров</h2>
         <ul class="catalog__list">
           <li class="product catalog__element">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-              <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" srcset="img/photo-hare-mobile@2x.jpg 2x">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="product__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" srcset="img/photo-hare-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="product__description">
-              <h3 class="product__name">
-                Зайчик-попрыгайчик
-              </h3>
+              <a href="#">
+                <h3 class="product__name">
+                  Зайчик-попрыгайчик
+                </h3>
+              </a>
               <p class="product__parameters">
                 Рост 30 см, вес 200 г
               </p>
@@ -132,7 +137,7 @@
                 <p class="product__price">
                   1 200 руб.
                 </p>
-                <a href="#">
+                <a class="buy" href="#">
                   <svg class="product__purchase-button" width="21" height="18">
                     <use xlink:href="#icon-cart"> </use>
                   </svg>
@@ -141,26 +146,30 @@
             </div>
           </li>
           <li class="product catalog__element">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-              <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" srcset="img/photo-bowl-mobile@2x.jpg 2x">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" srcset="img/photo-bowl-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="product__description">
-              <h3 class="product__name">
-                Корзинка для белья
-              </h3>
-              <p class="product__parameters">
+              <a href="#">
+                <h3 class="product__name">
+                  Корзинка для белья
+                </h3>
+              </a>
+                <p class="product__parameters">
                 Диаметр 15 см, высота 10 см
               </p>
               <div class="product__buy product-section__buy">
                 <p class="product__price">
                   690 руб.
                 </p>
-                <a href="#">
+                <a href="#" class="buy">
                   <svg class="product__purchase-button" width="21" height="18">
                     <use xlink:href="#icon-cart"> </use>
                   </svg>
@@ -169,18 +178,22 @@
             </div>
           </li>
           <li class="product catalog__element">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-              <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Корзинка для белья" srcset="img/photo-toys-mobile@2x.jpg 2x">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="product__image" src="img/photo-toys-mobile@1x.jpg" alt="Корзинка для белья" srcset="img/photo-toys-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="product__description">
-              <h3 class="product__name">
-                Большая корзинка для игрушек
-              </h3>
+              <a href="#">
+                <h3 class="product__name">
+                  Большая корзинка для игрушек
+                </h3>
+              </a>
               <p class="product__parameters">
                 Диаметр 30 см, высота 30 см
               </p>
@@ -188,7 +201,7 @@
                 <p class="product__price">
                   1 500 руб.
                 </p>
-                <a href="#">
+                <a href="#" class="buy">
                   <svg class="product__purchase-button" width="21" height="18">
                     <use xlink:href="#icon-cart"> </use>
                   </svg>
@@ -202,12 +215,21 @@
         <h2 class="production__header">
           Процесс производства
         </h2>
-        <video class="production__video" src="#" controls preload="auto"></video>
+        <picture class="production__video">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="production__video" src="img/video-mobile@1x.jpg" alt="Видео произвоства" srcset="img/video-mobile@2x.jpg 2x">
+        </picture>
+        <button class="production__video-button">
+        </button>
         <div class="production__wrapper">
           <p class="production__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
             как появляются наши товары.
           </p>
-          <a class=" button production__order-button" href="#">
+          <a class=" button production__order-button buy" href="#">
           сделать заказ
           </a>
         </div>
@@ -258,5 +280,24 @@
         </a>
       </div>
     </footer>
+        <!-- разметка всплывающего окна -->
+        <div class="pop-up none">
+          <h2 class="pop-up__header">
+            Добавить в&nbsp;корзину
+          </h2>
+          <p class="pop-up__text">
+            Выберите размер
+          </p>
+          <form class="pop-up__form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="pop-up__size-radio" type="radio" name="size" value="s" id="s" checked>
+            <label class="pop-up__size-label" for="s"> s </label>
+            <input class="pop-up__size-radio" type="radio" name="size" value="m" id="m">
+            <label class="pop-up__size-label" for="m"> m </label>
+            <input class="pop-up__size-radio" type="radio" name="size" value="l" id="l">
+            <label class="pop-up__size-label" for="l"> l </label>
+            <button class="pop-up__submit" type="submit">добавить</button>
+          </form>
+        </div>
+        <script src="js/script.js"></script>
   </body>
 </html>

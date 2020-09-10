@@ -13,6 +13,16 @@
     flex-direction: column;
     width: 316px;
   }
+
+
+  &:hover .product__description {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .product__description {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
 }
 
 .product__image {
@@ -36,6 +46,7 @@
     height: 462px;
     margin: 0;
   }
+
 }
 
 .product__description {
@@ -55,6 +66,10 @@
     height: 197px;
     padding-left: 27px;
   }
+}
+
+.product__description a {
+  color: black;
 }
 
 .product__name {

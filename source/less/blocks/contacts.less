@@ -146,11 +146,12 @@
 
 .contacts__email {
   .contacts__address;
-  text-decoration: underline;
   align-self: flex-start;
+  border-bottom: @middle-green solid 1px;
+  width: 179px;
 
   @media (min-width: @tablet) {
-    width: 230px;
+    width: 204px;
   }
 
   @media (min-width: @desktop) {
@@ -159,16 +160,30 @@
 }
 
 .contacts__map {
-  height: 457px;
+  height: 454px;
   width: 100%;
-  background-color: grey;
   padding: 0;
   margin-bottom: 39px;
-  //серый фон - заглушка. уберу, когда вставлю карту
+
+  &--frame {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 454px;
+    width: 100%;
+    border: none;
+  }
 
   @media (min-width: @tablet) {
     margin-top: 18px;
     margin-bottom: 52px;
+    height: 457px;
+
+    &--frame {
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 457px;
+      width: 100%;
+    }
   }
 
   @media (min-width: @desktop) {
