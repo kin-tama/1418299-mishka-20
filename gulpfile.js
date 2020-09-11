@@ -37,7 +37,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -51,7 +51,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/less/**/*.less", gulp.series("build"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
@@ -124,6 +124,20 @@ const build = gulp.series(
   clean,
   copy,
   styles,
+  server,
+  watcher,
 );
 
 exports.build = build;
+
+// start
+
+const start = gulp.series(
+  clean,
+  copy,
+  styles,
+  server,
+  watcher,
+);
+
+exports.start = start;

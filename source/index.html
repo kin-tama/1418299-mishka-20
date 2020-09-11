@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link href="css/styles.min.css" rel="stylesheet">
   </head>
@@ -64,7 +65,7 @@
               <img src="img/logo-mobile.svg" alt="Мишка лого">
             </picture>
           </div>
-          <button class="main-nav__nav-button invisibility" type="button">
+          <button class="main-nav__nav-button invisibility" type="button" aria-label="открыть меню">
           </button>
         </div>
         <ul class="navigation main-nav__nav">
@@ -201,12 +202,12 @@
         Анастасия Красильникова
         </b>
         <a class="reviews__author-link" href="https://www.instagram.com/misssssiskras/">
-        @missssssiskras
+          @misssssiskras
         </a>
         <div class="reviews__links">
-          <a class="reviews__previous-link" href="#">
+          <a class="reviews__previous-link" href="#" aria-label="предыдущий отзыв">
           </a>
-          <a class="reviews__next-link" href="#">
+          <a class="reviews__next-link" href="#" aria-label="следующий отзыв">
           </a>
         </div>
         <a href="#" class="button reviews__live-a-comment">написать</a>
@@ -253,7 +254,7 @@
             </li>
             <li class="social-media__item">
               <a href="https://ru-ru.facebook.com/" aria-label="facebook">
-                <svg width="22" height="21">
+                <svg width="30" height="25">
                   <use xlink:href="#facebook"> </use>
                 </svg>
               </a>
@@ -268,7 +269,7 @@
           </ul>
         </div>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-          <span>
+          <span class="copyright__text" >
           Разработано
           </span>
           <span class="copyright__academy">
