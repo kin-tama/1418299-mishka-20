@@ -1,0 +1,95 @@
+.catalog__header {
+  padding-top: 73px;
+  min-height: 177px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  background-color: @background-grey;
+  margin-top: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 100px;
+    margin-bottom: 66px;
+    min-height: 238px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 100%;
+    font-size: 53px;
+    line-height: 57px;
+    min-height: 272px;
+    padding-top: 102px;
+    padding-left: 2px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  position: relative;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -90px;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+    }
+  }
+
+  @media (min-width: @desktop) {
+    display: flex;
+    width: 1051px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: -100px;
+      width: 1150px;
+      height: 34px;
+      background-image: url("../img/zigzag-fill-desktop-catalog.svg");
+    }
+  }
+}
+
+.catalog__element {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
+}
+
+.catalog__production {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 65px;
+
+  @media (min-width: @desktop) {
+    margin-top: 55px;
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  width: 260px;
+  min-height: 80px;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  border-top: @one-more-grey solid 2px;
+  color: black;
+
+  @media (min-width: @tablet) {
+    border: none;
+    width: 184px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 7px;
+  }
+}
+
+.copyright__text {
+  padding-bottom: 3px;
+}
+
+.copyright__academy {
+  fill: @light-green;
+  margin-left: 20px;
+  padding-bottom: 0;
+}
+
+.copyright:hover .copyright__academy {
+  fill: @toy-hover-green;
+}
+
+.copyright:active .copyright__academy {
+  opacity: 0.3;
+}

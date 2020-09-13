@@ -1,0 +1,138 @@
+.color-filter {
+  @media (min-width: @tablet) {
+    background: @background-grey;
+  }
+}
+
+.color-filter__legend {
+  margin-bottom: 0;
+
+  @media (min-width: @tablet) {
+    padding-top: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 90px;
+    margin-right: 0;
+    padding-top: 48px;
+    padding-left: 1px;
+  }
+}
+
+.color-filter__fields-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 262px;
+  margin-top: 35px;
+  padding-top: 0;
+  padding-left: 55px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 43px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 800px;
+    margin-right: 80px;
+    padding-left: 30px;
+    padding-right: 45px;
+  }
+}
+
+.color-filter__input-label {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  position: relative;
+  min-height: 50px;
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet) {
+    width: 170px;
+    min-height: 30px;
+    margin-right: 0;
+    margin-bottom: 45px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 150px;
+    margin-left: 20px;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -55px;
+    width: 38px;
+    height: 38px;
+    border: @lighter-black solid 2px;
+
+    @media (min-width: @tablet) {
+      width: 52px;
+      height: 52px;
+      top: -31px;
+      left: -76px;
+    }
+
+    @media (min-width: @desktop) {
+      top: -35px;
+      left: -75px;
+    }
+  }
+
+  &:hover ::before {
+    border-color: @middle-green;
+  }
+
+  &:active ::before {
+    border-color: @lighter-black;
+    opacity: 0.5;
+  }
+}
+
+.color-filter__checkbox {
+  appearance: none;
+  position: relative;
+  outline: none;
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -45px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/small-tick.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+
+    @media (min-width: @tablet) {
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/icon-tick.svg");
+      left: -65px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/icon-tick.svg");
+      left: -65px;
+      top: -25px;
+    }
+  }
+}

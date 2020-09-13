@@ -1,0 +1,82 @@
+.filter {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  position: relative;
+
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0;
+  }
+}
+
+.filter__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: @middle-green;
+  text-transform: uppercase;
+
+  @media (max-width: @mobile) {
+    &::after {
+      position: absolute;
+      content: "";
+      right: -27px;
+      margin-top: 6px;
+      margin-right: 35px;
+      width: 200px;
+      height: 2px;
+      background-color: @middle-green;
+    }
+
+    &--email::after {
+      width: 181px;
+      margin-top: 8px;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    margin-left: 50px;
+    display: block;
+    width: 90px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 110px;
+    width: 80px;
+  }
+}
+
+.filter__fields-wrapper {
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 550px;
+    padding-bottom: 50px;
+  }
+}
+
+.filter__input-label {
+  margin-top: 0;
+  margin-left: 4px;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: @tablet) {
+    font-size: 19px;
+    line-height: 18px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 200px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}

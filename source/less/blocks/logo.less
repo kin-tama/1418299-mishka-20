@@ -1,0 +1,40 @@
+.logo__header {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: @tablet) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 149px;
+    height: 72px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.logo--footer {
+  width: 102px;
+  height: 34px;
+
+  &:hover {
+    fill: @toy-hover-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: @mobile) {
+    display: none;
+  }
+}

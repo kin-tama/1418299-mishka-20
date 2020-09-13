@@ -1,0 +1,22 @@
+.button {
+  color: @lighter-black;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 52px;
+  border: 2px solid @lighter-black;
+
+  &:hover {
+    color: white;
+    background-color: @lighter-black;
+  }
+
+  &:active {
+    color: fade(white; 30%);
+  }
+
+  @media (min-width: @tablet) {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,132 @@
+
+.type-filter__legend {
+  margin-top: 0;
+
+  @media (min-width: @tablet) {
+    padding-top: 83px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 81px;
+    padding-left: 1px;
+    margin-left: 90px;
+    margin-right: 0;
+  }
+}
+
+.type-filter__fields-wrapper {
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 43px;
+    width: 500px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 500px;
+    margin-right: 430px;
+    min-height: 220px;
+  }
+}
+
+.type-filter__input-label {
+  font-size: 17px;
+  line-height: 18px;
+  min-height: 50px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-left: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: relative;
+  width: 210px;
+
+  &--toy {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: @lighter-black;
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  &:hover {
+    ::before {
+      border-color: @middle-green;
+    }
+  }
+
+  &:active {
+    ::before {
+      border-color: @lighter-black;
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    position: relative;
+    font-size: 19px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-left: 20px;
+
+    ::before {
+      left: -57px;
+      top: 0;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 63px;
+    margin-top: 14px;
+  }
+}
+
+.type-filter__radio {
+  width: 2px;
+  height: 2px;
+  appearance: none;
+  outline: none;
+  font-size: 17px;
+  line-height: 18px;
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: @middle-green;
+  }
+
+  @media (min-width: @tablet) {
+    &:checked::after {
+      left: -41px;
+      top: 15px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
