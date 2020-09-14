@@ -10,7 +10,7 @@
     <!-- ниже следует спрайт -->
     <svg style="display: none;">
       <!-- лупа -->
-      <symbol class="search__icon" viewBox="-0.8 -0.8 17.6 17.6" id="search">
+      <symbol viewBox="-0.8 -0.8 17.6 17.6" id="search">
         <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
       </symbol>
       <!-- корзинка -->
@@ -89,7 +89,7 @@
           </li>
           <li class="navigation__list-item">
             <a href="#">
-              <svg class="product__purchase-button" width="21" height="18">
+              <svg class="navigation__purchase-button" width="21" height="18">
                 <use xlink:href="#icon-cart"> </use>
               </svg>
               Корзина: пока пуста
@@ -198,17 +198,21 @@
           и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
           больше лайков!
         </p>
-        <b class="reviews__author-name">
-        Анастасия Красильникова
-        </b>
-        <a class="reviews__author-link" href="https://www.instagram.com/misssssiskras/">
-          @misssssiskras
-        </a>
-        <div class="reviews__links">
-          <a class="reviews__previous-link" href="#" aria-label="предыдущий отзыв">
-          </a>
-          <a class="reviews__next-link" href="#" aria-label="следующий отзыв">
-          </a>
+        <div class="reviews__wrapper-one">
+          <div class="reviews__wrapper-two">
+            <b class="reviews__author-name">
+            Анастасия Красильникова
+            </b>
+            <a class="reviews__author-link" href="https://www.instagram.com/misssssiskras/">
+              @misssssiskras
+            </a>
+          </div>
+          <div class="reviews__links">
+            <a class="reviews__previous-link" href="#" aria-label="предыдущий отзыв">
+            </a>
+            <a class="reviews__next-link" href="#" aria-label="следующий отзыв">
+            </a>
+          </div>
         </div>
         <a href="#" class="button reviews__live-a-comment">написать</a>
       </section>
@@ -231,20 +235,20 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__map--frame" src="https://yandex.ru/map-widget/v1/-/CCQx5GwFKC">
+          <iframe class="contacts__map contacts__map--frame" src="https://yandex.ru/map-widget/v1/-/CCQx5GwFKC">
           </iframe>
         </div>
         <a href="#" class="contacts__write-to-us button">напишите нам</a>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper">
-        <svg class="logo--footer">
+      <div class="footer__wrapper logo">
+        <svg class="logo__footer">
           <use xlink:href="#logo-footer"> </use>
         </svg>
         <div class="social-media">
           <b class="social-media__label visually-hidden">Мы в социальных сетях</b>
-          <ul class="social-media__list social-section__list">
+          <ul class="social-media__list">
             <li class="social-media__item">
               <a href="https://www.instagram.com/?hl=ru" aria-label="instagram">
                 <svg width="22" height="21">

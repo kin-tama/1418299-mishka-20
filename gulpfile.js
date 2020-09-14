@@ -124,8 +124,6 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  server,
-  watcher,
 );
 
 exports.build = build;
@@ -133,9 +131,7 @@ exports.build = build;
 // start
 
 const start = gulp.series(
-  clean,
-  copy,
-  styles,
+  build,
   server,
   watcher,
 );

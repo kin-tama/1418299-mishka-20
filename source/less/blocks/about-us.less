@@ -56,10 +56,10 @@
     line-height: 22px;
     width: 668px;
     margin: 0;
-    padding-right: 35px;
+    padding-right: 0;
   }
 
-  @media (min-width: @tablet) {
+  @media (min-width: @desktop) {
     width: 700px;
     padding-right: 0;
   }
@@ -79,11 +79,17 @@
   &--flower::before {
     content: "";
     position: absolute;
-    top: -60px;
+    top: -55px;
+    left: 8px;
     width: 50px;
     height: 62px;
     background-image: url("../img/icon-feature-flower.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      top: -60px;
+      left: 8px;
+    }
 
     @media (min-width: @desktop) {
       top: -55px;
@@ -100,6 +106,11 @@
     background-image: url("../img/icon-feature-money.svg");
     background-repeat: no-repeat;
 
+    @media (min-width: @tablet) {
+      top: -55px;
+      left: 0;
+    }
+
     @media (min-width: @desktop) {
       top: -55px;
       left: 0;
@@ -109,11 +120,17 @@
   &--heart::before {
     content: "";
     position: absolute;
-    top: -50px;
+    top: -48px;
+    left: 8px;
     width: 50px;
     height: 62px;
     background-image: url("../img/icon-feature-heart.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      top: -49px;
+      left: 8px;
+    }
 
     @media (min-width: @desktop) {
       top: -49px;
@@ -130,6 +147,11 @@
     background-image: url("../img/icon-feature-ball.svg");
     background-repeat: no-repeat;
 
+    @media (min-width: @tablet) {
+      top: -55px;
+      left: 3px;
+    }
+
     @media (min-width: @desktop) {
       top: -51px;
       left: 3px;
@@ -140,10 +162,16 @@
     content: "";
     position: absolute;
     top: -50px;
+    left: -3px;
     width: 60px;
     height: 62px;
     background-image: url("../img/icon-feature-rocket.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      top: -52px;
+      left: -5px;
+    }
 
     @media (min-width: @desktop) {
       top: -51px;
@@ -155,10 +183,16 @@
     content: "";
     position: absolute;
     top: -50px;
+    left: 2px;
     width: 50px;
     height: 62px;
     background-image: url("../img/icon-feature-gift.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      top: -53px;
+      left: 3px;
+    }
 
     @media (min-width: @desktop) {
       top: -51px;
